@@ -17,7 +17,7 @@ fi
 
 echo "Fixing VirtualBox"
 sleep 2
-sudo apt install --reinstall virtualbox-dkms
+sudo apt install --reinstall virtualbox-dkms &> /dev/null
 sudo modprobe vboxdrv
 read -rp "Do you want to run virtualbox? [(y)es]/[(n)o]" 
 echo  
